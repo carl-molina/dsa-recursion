@@ -7,9 +7,9 @@ function longest(words: LLNodeStr | null): number {
   // ["hi", "hello", "hola"]
   if(words === null) return 0;
 
-  const currLength = words.val.length; //hi //hello //hola
+  const currLength = words.val.length;
 
-  const nextWordLength = longest(words.next)
+  const nextWordLength = longest(words.next);
 
   return Math.max(currLength, nextWordLength);
 }

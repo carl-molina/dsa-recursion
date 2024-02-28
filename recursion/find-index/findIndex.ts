@@ -11,7 +11,7 @@ function findIndex(arr: number[], val: number): number {
   //[1, 2, 3]
 
   const indexOfRest = findIndex(arr.slice(1), val); //
-
+  //can refactor into a ternary
   if(indexOfRest !== -1){
     return indexOfRest + 1;
   }
